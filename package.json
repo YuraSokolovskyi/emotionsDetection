@@ -1,0 +1,31 @@
+{
+  "name": "emotiondetector",
+  "version": "1.0.0",
+  "description": "An app for detecting your emotions in real time",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Yura",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.10.0",
+    "canvas": "^2.11.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "face-api.js": "^0.20.0",
+    "node-abi": "^3.45.0",
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.3.0",
+    "@electron-forge/maker-deb": "^6.3.0",
+    "@electron-forge/maker-rpm": "^6.3.0",
+    "@electron-forge/maker-squirrel": "^6.3.0",
+    "@electron-forge/maker-zip": "^6.3.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.3.0",
+    "electron": "^25.5.0",
+    "electron-rebuild": "^3.2.9"
+  }
+}

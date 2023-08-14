@@ -1,0 +1,183 @@
+/*animation*/
+.sectionButtonUnderline,
+.background,
+.sectionContainer{
+  transition: width 0.15s;
+  animation-timing-function: ease-in-out;
+}
+
+body,
+html{
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+.sectionContainer{
+  overflow: hidden;
+  position: absolute;
+}
+
+.menu{
+  height: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 150px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.emotionFromUrl{
+  right: 0;
+}
+
+.imgInput{
+  display: none;
+}
+
+.menu{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sectionButton{
+  font-size: 24px;
+  font-weight: normal;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: chartreuse;
+  position: relative;
+  cursor: pointer;
+}
+
+.sectionButtonUnderline{
+  position: absolute;
+  height: 5px;
+  background-color: lightgray;
+}
+
+#fromFileUnderline{
+  right: 0;
+}
+
+.sectionOpened{
+  width: 100%;
+}
+
+.sectionClosed{
+  width: 0;
+}
+
+.background{
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+.fromFileBackGround{
+  left: 0;
+  background-color: #7a7c1f;
+}
+
+.fromUrlBackGround{
+  right: 0;
+  background-color: darkkhaki;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.fromFileSelectFileLogo{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.emotionsList{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emotionsListItem{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.displayNone{
+  display: none;
+}
+
+.hidden{
+  width: 0;
+  height: 0;
+}
+
+.status{
+  margin: 0;
+}
+
+.statusContainer{
+  display: flex;
+}
+
+@keyframes infiniteRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.precessImageIcon{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  animation: infiniteRotation 2s linear infinite;
+}
+
+.urlInput{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #cecece;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.urlInput:focus{
+  outline: none;
+}
+
+.getImageUrl{
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #30799B;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Emotions Detection App</title>
+</head>
+<body>
+<div class="menu">
+  <div class="fromFileBackGround background sectionOpened"></div>
+  <div class="fromUrlBackGround background sectionClosed"></div>
+  <button class="sectionButton" id="fromFileBtn">
+    File
+    <div class="sectionButtonUnderline sectionOpened" id="fromFileUnderline"></div>
+  </button>
+  <button class="sectionButton" id="fromUrlBtn">
+    Url
+    <div class="sectionButtonUnderline sectionClosed" id="fromUrlUnderline"></div>
+  </button>
+</div>
+<div class="totalContainer">
+  <div class="fromFileBackGround background sectionOpened"></div>
+  <div class="fromUrlBackGround background sectionClosed"></div>
+
+  <div class="sectionContainer emotionFromFile sectionOpened" id="emotionFromFile">
+    <div class="container">
+      <label class="label">
+        <img src="./images/logo.png" class="fromFileSelectFileLogo" alt="select or drag file"/>
+        <input id="imgInput" type="file" class="imgInput"/>
+      </label>
+      <div class="statusContainer">
+        <img src="images/processImage.png" alt="" class="precessImageIcon" id="precessImageIconFile">
+        <p class="status" id="statusFile"></p>
+      </div>
+      <ul class="emotionsList displayNone" id="emotionsListFile">
+
+      </ul>
+    </div>
+  </div>
+  <div class="sectionContainer emotionFromUrl sectionClosed" id="emotionFromUrl">
+    <div class="container">
+      <label class="label">
+        <input id="urlInput" type="url" class="urlInput" placeholder="Enter url"/>
+        <button class="getImageUrl" id="getImageUrl" type="submit">Process Image</button>
+      </label>
+      <div class="statusContainer">
+        <img src="images/processImage.png" alt="" class="precessImageIcon" id="precessImageIconUrl">
+        <p class="status" id="statusUrl"></p>
+      </div>
+      <ul class="emotionsList displayNone" id="emotionsListUrl">
+
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="js/renderer.js"></script>
+</body>
+</html>
